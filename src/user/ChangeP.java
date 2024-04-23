@@ -106,30 +106,32 @@ public class ChangeP extends javax.swing.JFrame {
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 530, 60));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("OLD PASSWORD");
+        jLabel3.setText("OLD PASSWORD:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setText("NEW PASSWORD");
+        jLabel6.setText("NEW PASSWORD:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setText("CONFIRM PASSWORD");
+        jLabel4.setText("CONFIRM PASSWORD:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, -1, -1));
-        getContentPane().add(oldp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 190, -1));
-        getContentPane().add(newp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 190, -1));
-        getContentPane().add(firmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 190, -1));
+        getContentPane().add(oldp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 100, 200, 30));
+        getContentPane().add(newp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 200, 30));
+        getContentPane().add(firmp, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 200, 30));
 
+        jPanel3.setBackground(new java.awt.Color(153, 255, 153));
         jPanel3.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("BACK");
         jPanel3.add(jLabel1);
-        jLabel1.setBounds(10, 10, 60, 17);
+        jLabel1.setBounds(0, -3, 80, 30);
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 80, 30));
 
+        jPanel4.setBackground(new java.awt.Color(153, 255, 153));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -141,7 +143,7 @@ public class ChangeP extends javax.swing.JFrame {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("SAVE");
         jPanel4.add(jLabel5);
-        jLabel5.setBounds(10, 10, 60, 17);
+        jLabel5.setBounds(0, -3, 80, 30);
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 80, 30));
 

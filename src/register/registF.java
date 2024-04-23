@@ -99,17 +99,18 @@ public class registF extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("REGISTRATION FORM");
 
-        jLabel2.setText("FIRST NAME");
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("FIRST NAME:");
 
-        jLabel3.setText("LAST NAME");
+        jLabel3.setText("LAST NAME:");
 
-        jLabel4.setText("EMAIL");
+        jLabel4.setText("EMAIL:");
 
-        jLabel5.setText("USERNAME");
+        jLabel5.setText("USERNAME:");
 
-        jLabel6.setText("PASSWORD");
+        jLabel6.setText("PASSWORD:");
 
-        jLabel7.setText("USER TYPE");
+        jLabel7.setText("USER TYPE:");
 
         ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin" }));
 
@@ -156,8 +157,8 @@ public class registF extends javax.swing.JFrame {
                                 .addGap(20, 20, 20)
                                 .addComponent(us, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(20, 20, 20)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(pw, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)

@@ -151,9 +151,11 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(id);
         id.setBounds(240, 90, 190, 20);
 
-        jLabel2.setText("USER ID");
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("USER ID:");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(160, 90, 40, 14);
+        jLabel2.setBounds(140, 90, 80, 14);
 
         add.setText("ADD");
         add.addActionListener(new java.awt.event.ActionListener() {
@@ -174,9 +176,11 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(up);
         up.setBounds(30, 130, 80, 23);
 
-        jLabel10.setText("FIRST NAME");
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("FIRST NAME:");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(160, 120, 60, 14);
+        jLabel10.setBounds(140, 120, 90, 14);
 
         fn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,9 +192,11 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(ln);
         ln.setBounds(240, 160, 190, 20);
 
-        jLabel3.setText("LAST NAME");
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("LAST NAME:");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(160, 160, 55, 14);
+        jLabel3.setBounds(140, 160, 90, 14);
 
         del.setText("DELETE");
         del.addActionListener(new java.awt.event.ActionListener() {
@@ -210,13 +216,17 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(cl);
         cl.setBounds(30, 210, 80, 23);
 
-        jLabel4.setText("EMAIL");
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("EMAIL:");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(160, 190, 30, 14);
+        jLabel4.setBounds(140, 190, 70, 14);
 
-        jLabel5.setText("USERNAME");
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("USERNAME:");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(160, 220, 54, 14);
+        jLabel5.setBounds(140, 220, 90, 14);
         jPanel1.add(mail);
         mail.setBounds(240, 190, 190, 20);
         jPanel1.add(us);
@@ -224,9 +234,11 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(pw);
         pw.setBounds(240, 260, 190, 20);
 
-        jLabel6.setText("PASSWORD");
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("PASSWORD:");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(160, 260, 57, 14);
+        jLabel6.setBounds(140, 260, 90, 14);
 
         cc.setText("CANCEL");
         cc.addActionListener(new java.awt.event.ActionListener() {
@@ -246,13 +258,17 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(rf);
         rf.setBounds(30, 290, 80, 23);
 
-        jLabel8.setText("USER TYPE");
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("USER TYPE:");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(160, 290, 53, 14);
+        jLabel8.setBounds(140, 290, 90, 14);
 
-        jLabel9.setText("USER STATUS");
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("USER STATUS:");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(160, 320, 70, 20);
+        jLabel9.setBounds(130, 320, 110, 20);
 
         ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin" }));
         jPanel1.add(ut);

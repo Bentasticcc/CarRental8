@@ -103,21 +103,21 @@ public class loginF extends javax.swing.JFrame {
         jPanel2.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setText("LOG-IN FORM");
+        jLabel1.setText("LOGIN FORM");
         jPanel2.add(jLabel1);
         jLabel1.setBounds(190, 50, 103, 35);
         jPanel2.add(un);
         un.setBounds(170, 110, 150, 20);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("USERNAME");
+        jLabel2.setText("USERNAME:");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(90, 110, 67, 15);
+        jLabel2.setBounds(90, 110, 71, 15);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("PASSWORD");
+        jLabel3.setText("PASSWORD:");
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(90, 140, 72, 15);
+        jLabel3.setBounds(80, 140, 76, 15);
         jPanel2.add(pw);
         pw.setBounds(170, 140, 150, 20);
 
