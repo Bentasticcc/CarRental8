@@ -43,7 +43,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`u_id`, `u_fname`, `u_lname`, `u_email`, `u_username`, `u_password`, `u_type`, `u_status`) VALUES
-(1, 'ryan', 'cansancio', 'ryancansancio7@gmail.com', 'gwenchana', 'ryan1234', 'Admin', 'Active');
+(1, 'Benjie', 'Gwapo', 'ben@test.com', 'Bentastic', '12345678', 'Admin', 'Active');
 
 --
 -- Indexes for dumped tables

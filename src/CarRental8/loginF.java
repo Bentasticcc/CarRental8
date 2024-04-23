@@ -98,7 +98,6 @@ public class loginF extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 153));
         jPanel2.setLayout(null);
@@ -106,21 +105,21 @@ public class loginF extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("LOG-IN FORM");
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(150, 80, 103, 35);
+        jLabel1.setBounds(190, 50, 103, 35);
         jPanel2.add(un);
-        un.setBounds(130, 140, 150, 20);
+        un.setBounds(170, 110, 150, 20);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("USERNAME");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(50, 140, 67, 15);
+        jLabel2.setBounds(90, 110, 67, 15);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("PASSWORD");
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(50, 170, 72, 15);
+        jLabel3.setBounds(90, 140, 72, 15);
         jPanel2.add(pw);
-        pw.setBounds(130, 170, 150, 20);
+        pw.setBounds(170, 140, 150, 20);
 
         jButton1.setText("LOG-IN");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +128,7 @@ public class loginF extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton1);
-        jButton1.setBounds(120, 200, 67, 23);
+        jButton1.setBounds(147, 170, 80, 23);
 
         jButton2.setText("REGISTER");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -138,9 +137,9 @@ public class loginF extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(200, 200, 81, 23);
+        jButton2.setBounds(240, 170, 90, 23);
 
-        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel1MouseClicked(evt);
@@ -156,7 +155,16 @@ public class loginF extends javax.swing.JFrame {
         jPanel2.add(jPanel1);
         jPanel1.setBounds(330, 10, 120, 40);
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 420));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
         setLocationRelativeTo(null);

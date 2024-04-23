@@ -140,9 +140,14 @@ public class CreateUsersF extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("CREATE FORM");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(250, 40, 164, 32);
+        jLabel1.setBounds(240, 40, 164, 32);
 
         id.setEnabled(false);
+        id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idActionPerformed(evt);
+            }
+        });
         jPanel1.add(id);
         id.setBounds(240, 90, 190, 20);
 
@@ -249,7 +254,7 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(jLabel9);
         jLabel9.setBounds(160, 320, 70, 20);
 
-        ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin", " " }));
+        ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin" }));
         jPanel1.add(ut);
         ut.setBounds(240, 290, 190, 20);
 
@@ -257,7 +262,7 @@ public class CreateUsersF extends javax.swing.JFrame {
         jPanel1.add(um);
         um.setBounds(240, 320, 190, 20);
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 460));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 390));
 
         pack();
         setLocationRelativeTo(null);
@@ -347,6 +352,10 @@ public class CreateUsersF extends javax.swing.JFrame {
        this.dispose();
        
     }//GEN-LAST:event_ccActionPerformed
+
+    private void idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_idActionPerformed
 
     /**
      * @param args the command line arguments
