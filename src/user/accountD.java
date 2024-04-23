@@ -8,7 +8,7 @@ package user;
 import admin.*;
 import config.Session;
 import javax.swing.JOptionPane;
-import testappnew.loginF;
+import CarRental8.loginF;
 
 /**
  *
@@ -75,25 +75,28 @@ public class accountD extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
         acc_ln.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        acc_ln.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         acc_ln.setText("USER");
-        jPanel1.add(acc_ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 50, 30));
+        jPanel1.add(acc_ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 140, 30));
 
         acc_fn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        acc_fn.setText("ACC_FN");
-        jPanel1.add(acc_fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 50, 30));
+        acc_fn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        acc_fn.setText("USER");
+        jPanel1.add(acc_fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 140, 30));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("CHANGE PASS");
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 90, 30));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 140, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 320));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(153, 255, 153));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -106,17 +109,17 @@ public class accountD extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 530, 60));
 
-        jLabel3.setText("First Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, -1, -1));
+        jLabel3.setText("FIRST NAME");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 110, -1, -1));
 
-        jLabel6.setText("Last Name");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, -1));
+        jLabel6.setText("LAST NAME");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, -1, -1));
 
-        jLabel4.setText("Gmail");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, -1, -1));
+        jLabel4.setText("EMAIL");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 170, -1, -1));
 
-        jLabel5.setText("UserName");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, -1, -1));
+        jLabel5.setText("USERNAME");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, -1, -1));
         getContentPane().add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 110, 190, -1));
         getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 140, 190, -1));
         getContentPane().add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 190, -1));
@@ -125,8 +128,8 @@ public class accountD extends javax.swing.JFrame {
         ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin", " " }));
         getContentPane().add(ut, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 190, -1));
 
-        jLabel10.setText("User Type");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, -1));
+        jLabel10.setText("USER TYPE");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, -1, -1));
 
         pack();
         setLocationRelativeTo(null);

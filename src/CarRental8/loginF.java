@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package testappnew;
+package CarRental8;
 
 import admin.dashboard;
 
@@ -86,11 +86,12 @@ public class loginF extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         un = new javax.swing.JTextField();
-        pw = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        pw = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
@@ -99,19 +100,27 @@ public class loginF extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel2.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel2.setLayout(null);
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setText("LOG-IN FORM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 103, 35));
-        getContentPane().add(un, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 150, -1));
-        getContentPane().add(pw, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 150, -1));
+        jPanel2.add(jLabel1);
+        jLabel1.setBounds(150, 80, 103, 35);
+        jPanel2.add(un);
+        un.setBounds(130, 140, 150, 20);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("UserName");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, -1, -1));
+        jLabel2.setText("USERNAME");
+        jPanel2.add(jLabel2);
+        jLabel2.setBounds(50, 140, 67, 15);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("PassWord");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, -1, -1));
+        jLabel3.setText("PASSWORD");
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(50, 170, 72, 15);
+        jPanel2.add(pw);
+        pw.setBounds(130, 170, 150, 20);
 
         jButton1.setText("LOG-IN");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -119,7 +128,8 @@ public class loginF extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
+        jPanel2.add(jButton1);
+        jButton1.setBounds(120, 200, 67, 23);
 
         jButton2.setText("REGISTER");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -127,8 +137,10 @@ public class loginF extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, -1, -1));
+        jPanel2.add(jButton2);
+        jButton2.setBounds(200, 200, 81, 23);
 
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel1MouseClicked(evt);
@@ -137,10 +149,14 @@ public class loginF extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("DASHBOARD");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 90, 20));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 120, 20));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 120, 40));
+        jPanel2.add(jPanel1);
+        jPanel1.setBounds(330, 10, 120, 40);
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, 420));
 
         pack();
         setLocationRelativeTo(null);
@@ -151,25 +167,25 @@ public class loginF extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
       if(loginAcc(un.getText(), pw.getText())){
           if(!status.equals("Active")){
-              JOptionPane.showMessageDialog(null, "in active");
+              JOptionPane.showMessageDialog(null, "In-Active Account!");
           }else{
               if(type.equals("Admin")){
-                  JOptionPane.showMessageDialog(null, "login");
+                  JOptionPane.showMessageDialog(null, "Login Successfully!");
                   dashboard ads = new dashboard();                
                   ads.setVisible(true);
                   this.dispose();
               }else if(type.equals("User")){
-                  JOptionPane.showMessageDialog(null, "login");
+                  JOptionPane.showMessageDialog(null, "Login Successfully");
                   userDash uds = new userDash();              
                   uds.setVisible(true);
                   this.dispose();
               }else{
-                   JOptionPane.showMessageDialog(null, "No account");
+                   JOptionPane.showMessageDialog(null, "No Account, Contact Admin!");
               }
           }
           
       }else{
-          JOptionPane.showMessageDialog(null, "Invalid Account");
+          JOptionPane.showMessageDialog(null, "Invalid Account!");
       }
         
         
@@ -230,6 +246,7 @@ public class loginF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField pw;
     private javax.swing.JTextField un;
     // End of variables declaration//GEN-END:variables

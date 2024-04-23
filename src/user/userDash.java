@@ -8,7 +8,7 @@ package user;
 
 import config.Session;
 import javax.swing.JOptionPane;
-import testappnew.loginF;
+import CarRental8.loginF;
 
 /**
  *
@@ -65,17 +65,19 @@ public class userDash extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
         acc_fname.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        acc_fname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         acc_fname.setText("USER");
         jPanel1.add(acc_fname, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 50, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 320));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(51, 255, 51));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel1.setText("USERDASHBOARD");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 163, 34));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("USER DASHBOARD");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 163, 34));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 0, 530, 60));
 
@@ -97,7 +99,7 @@ public class userDash extends javax.swing.JFrame {
         jPanel4.add(jLabel5);
         jLabel5.setBounds(60, 80, 60, 20);
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 180, 130));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 100, 180, 130));
 
         pack();
         setLocationRelativeTo(null);

@@ -11,7 +11,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-import testappnew.loginF;
+import CarRental8.loginF;
 
 
 /**
@@ -72,53 +72,74 @@ public class registF extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        fn = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        fn = new javax.swing.JTextField();
         ln = new javax.swing.JTextField();
         mail = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         us = new javax.swing.JTextField();
+        pw = new javax.swing.JPasswordField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         ut = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        pw = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(650, 450));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel1.setLayout(null);
+
+        jLabel1.setBackground(new java.awt.Color(51, 255, 51));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("REGISTRATION FORM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 61, 164, 32));
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(270, 50, 164, 32);
+        jPanel1.add(fn);
+        fn.setBounds(260, 100, 190, 20);
 
-        jLabel2.setText("First Name");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, -1, -1));
+        jLabel2.setText("FIRST NAME");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(180, 100, 60, 14);
 
-        jLabel3.setText("Last Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
+        jLabel3.setText("LAST NAME");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(180, 140, 60, 14);
+        jPanel1.add(ln);
+        ln.setBounds(260, 140, 190, 20);
+        jPanel1.add(mail);
+        mail.setBounds(260, 170, 190, 20);
 
-        jLabel4.setText("Gmail");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, -1, -1));
+        jLabel4.setText("EMAIL");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(180, 170, 40, 14);
 
-        jLabel5.setText("UserName");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
+        jLabel5.setText("USERNAME");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(180, 200, 60, 14);
+        jPanel1.add(us);
+        us.setBounds(260, 200, 190, 20);
+        jPanel1.add(pw);
+        pw.setBounds(260, 240, 190, 20);
 
-        jLabel6.setText("PassWord");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, -1, -1));
+        jLabel6.setText("PASSWORD");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(180, 240, 60, 14);
 
-        jLabel7.setText("User Type");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, -1, -1));
-        getContentPane().add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 190, -1));
-        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 190, -1));
-        getContentPane().add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 190, -1));
-        getContentPane().add(us, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 190, -1));
+        jLabel7.setText("USER TYPE");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(180, 270, 60, 14);
 
-        ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin", " " }));
-        getContentPane().add(ut, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 190, -1));
+        ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin" }));
+        jPanel1.add(ut);
+        ut.setBounds(260, 270, 190, 20);
 
         jButton1.setText("Cancel");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +147,8 @@ public class registF extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, -1, -1));
+        jPanel1.add(jButton1);
+        jButton1.setBounds(260, 320, 65, 23);
 
         jButton2.setText("Register");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -134,8 +156,10 @@ public class registF extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, -1, -1));
-        getContentPane().add(pw, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 190, -1));
+        jPanel1.add(jButton2);
+        jButton2.setBounds(350, 320, 73, 23);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 680, 460));
 
         pack();
         setLocationRelativeTo(null);
@@ -234,6 +258,7 @@ public class registF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField ln;
     private javax.swing.JTextField mail;
     private javax.swing.JPasswordField pw;

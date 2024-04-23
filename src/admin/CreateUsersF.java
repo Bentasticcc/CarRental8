@@ -103,66 +103,52 @@ public class CreateUsersF extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        id = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        add = new javax.swing.JButton();
+        up = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
         fn = new javax.swing.JTextField();
         ln = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        del = new javax.swing.JButton();
+        cl = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         mail = new javax.swing.JTextField();
         us = new javax.swing.JTextField();
         pw = new javax.swing.JTextField();
-        ut = new javax.swing.JComboBox<>();
-        add = new javax.swing.JButton();
-        um = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        cc = new javax.swing.JButton();
+        rf = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        id = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        rf = new javax.swing.JButton();
-        up = new javax.swing.JButton();
-        del = new javax.swing.JButton();
-        cl = new javax.swing.JButton();
-        cc = new javax.swing.JButton();
+        ut = new javax.swing.JComboBox<>();
+        um = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setText("CREATE FORM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 164, 32));
-
-        jLabel2.setText("User ID");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, -1, -1));
-
-        jLabel3.setText("Last Name");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, -1, -1));
-
-        jLabel4.setText("Gmail");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, -1, -1));
-
-        jLabel5.setText("UserName");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, -1));
-
-        jLabel6.setText("PassWord");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, -1, -1));
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, -1, -1));
 
-        fn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fnActionPerformed(evt);
-            }
-        });
-        getContentPane().add(fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 110, 190, -1));
-        getContentPane().add(ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 190, -1));
-        getContentPane().add(mail, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 180, 190, -1));
-        getContentPane().add(us, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 210, 190, -1));
-        getContentPane().add(pw, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 190, -1));
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel1.setLayout(null);
 
-        ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin", " " }));
-        getContentPane().add(ut, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 190, -1));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("CREATE FORM");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(250, 40, 164, 32);
+
+        id.setEnabled(false);
+        jPanel1.add(id);
+        id.setBounds(240, 90, 190, 20);
+
+        jLabel2.setText("USER ID");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(160, 90, 40, 14);
 
         add.setText("ADD");
         add.addActionListener(new java.awt.event.ActionListener() {
@@ -170,30 +156,8 @@ public class CreateUsersF extends javax.swing.JFrame {
                 addActionPerformed(evt);
             }
         });
-        getContentPane().add(add, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 80, -1));
-
-        um.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Pending" }));
-        getContentPane().add(um, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 190, -1));
-
-        jLabel8.setText("User Type");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, -1, -1));
-
-        jLabel9.setText("User Status");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 60, 20));
-
-        id.setEnabled(false);
-        getContentPane().add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 80, 190, -1));
-
-        jLabel10.setText("First Name");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, -1, -1));
-
-        rf.setText("REFRESH");
-        rf.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rfActionPerformed(evt);
-            }
-        });
-        getContentPane().add(rf, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 80, -1));
+        jPanel1.add(add);
+        add.setBounds(30, 90, 80, 23);
 
         up.setText("UPDATE");
         up.setEnabled(false);
@@ -202,7 +166,26 @@ public class CreateUsersF extends javax.swing.JFrame {
                 upActionPerformed(evt);
             }
         });
-        getContentPane().add(up, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 80, -1));
+        jPanel1.add(up);
+        up.setBounds(30, 130, 80, 23);
+
+        jLabel10.setText("FIRST NAME");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(160, 120, 60, 14);
+
+        fn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fnActionPerformed(evt);
+            }
+        });
+        jPanel1.add(fn);
+        fn.setBounds(240, 120, 190, 20);
+        jPanel1.add(ln);
+        ln.setBounds(240, 160, 190, 20);
+
+        jLabel3.setText("LAST NAME");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(160, 160, 55, 14);
 
         del.setText("DELETE");
         del.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +193,8 @@ public class CreateUsersF extends javax.swing.JFrame {
                 delActionPerformed(evt);
             }
         });
-        getContentPane().add(del, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 80, -1));
+        jPanel1.add(del);
+        del.setBounds(30, 170, 80, 23);
 
         cl.setText("CLEAR");
         cl.addActionListener(new java.awt.event.ActionListener() {
@@ -218,7 +202,26 @@ public class CreateUsersF extends javax.swing.JFrame {
                 clActionPerformed(evt);
             }
         });
-        getContentPane().add(cl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 80, -1));
+        jPanel1.add(cl);
+        cl.setBounds(30, 210, 80, 23);
+
+        jLabel4.setText("EMAIL");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(160, 190, 30, 14);
+
+        jLabel5.setText("USERNAME");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(160, 220, 54, 14);
+        jPanel1.add(mail);
+        mail.setBounds(240, 190, 190, 20);
+        jPanel1.add(us);
+        us.setBounds(240, 220, 190, 20);
+        jPanel1.add(pw);
+        pw.setBounds(240, 260, 190, 20);
+
+        jLabel6.setText("PASSWORD");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(160, 260, 57, 14);
 
         cc.setText("CANCEL");
         cc.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +229,35 @@ public class CreateUsersF extends javax.swing.JFrame {
                 ccActionPerformed(evt);
             }
         });
-        getContentPane().add(cc, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 80, -1));
+        jPanel1.add(cc);
+        cc.setBounds(30, 250, 80, 23);
+
+        rf.setText("REFRESH");
+        rf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rfActionPerformed(evt);
+            }
+        });
+        jPanel1.add(rf);
+        rf.setBounds(30, 290, 80, 23);
+
+        jLabel8.setText("USER TYPE");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(160, 290, 53, 14);
+
+        jLabel9.setText("USER STATUS");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(160, 320, 70, 20);
+
+        ut.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin", " " }));
+        jPanel1.add(ut);
+        ut.setBounds(240, 290, 190, 20);
+
+        um.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Active", "Pending" }));
+        jPanel1.add(um);
+        um.setBounds(240, 320, 190, 20);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 460));
 
         pack();
         setLocationRelativeTo(null);
@@ -370,6 +401,7 @@ public class CreateUsersF extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     public javax.swing.JTextField ln;
     public javax.swing.JTextField mail;
     public javax.swing.JTextField pw;

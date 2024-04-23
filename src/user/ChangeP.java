@@ -13,7 +13,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-import testappnew.loginF;
+import CarRental8.loginF;
 
 /**
  *
@@ -79,16 +79,18 @@ public class ChangeP extends javax.swing.JFrame {
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
 
         acc_ln.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        acc_ln.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         acc_ln.setText("USER");
-        jPanel1.add(acc_ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 50, 30));
+        jPanel1.add(acc_ln, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 140, 30));
 
         acc_fn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        acc_fn.setText("ACC_FN");
-        jPanel1.add(acc_fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 50, 30));
+        acc_fn.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        acc_fn.setText("USER");
+        jPanel1.add(acc_fn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 140, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 360));
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(102, 255, 102));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
